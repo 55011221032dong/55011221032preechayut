@@ -8,7 +8,7 @@ class myarray{
     }
     
     func factory()->Double{
-        var res:Double
+        var res:Double=0
         for (var i=0;i<10;i++){
             res=1*i ;
         }

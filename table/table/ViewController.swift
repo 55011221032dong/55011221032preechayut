@@ -8,54 +8,51 @@
 
 import UIKit
 
-class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
     
-    let cellIdentifier = "celIdentifier"
-    var tableData = ["Bus","Helicopter","Truuck"]
-    
+    let cellIdentifier = "cellIdentifier"
+    var tableData = ["Bus","Helicopter","Truck"]
     @IBOutlet var tableView: UITableView!
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: self.cellIdentifier)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    func numberOfSectionsInTableView(tableView: UITableView!) -> Int {
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
-    func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tableData.count
     }
     
-    func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        var cell = tableView!.dequeueReusableCellWithIdentifier(self.cellIdentifier) as UITableViewCell
+        var cell = tableView.dequeueReusableCellWithIdentifier(self.cellIdentifier) as UITableViewCell
         
-        cell.textLabel!.text = self.tableData[indexPath.row]
+        cell.textLabel!.text = tableData[indexPath.row]
         var imageName = UIImage(named: tableData[indexPath.row])
         cell.imageView!.image = imageName
         return cell
-        
     }
-    func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        let alert = UIAlertController(title: "Item selected", message: "You selected \(indexPath.row)", preferredStyle: UIAlertControllerStyle.Alert)
+        let alert = UIAlertController(title: "Item Selected", message: "Your Selected Item\(indexPath.row)", preferredStyle: UIAlertControllerStyle.Alert)
         
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: {
-             (alert: UIAlertAction!) in println("An alert of type \(alert.style.hashValue) was tapped") }))
-        
+        alert.addAction(UIAlertAction(title: "OKay",
+            style: UIAlertActionStyle.Default,
+            handler: {
+                (alert: UIAlertAction!) in println("An Alert of type \(alert.style.hashValue) was tapped!")
+        }))
         
         self.presentViewController(alert, animated: true, completion: nil)
-    
     }
-
-
+    
 }
-

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Jvl-D1-ZKT">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
@@ -7,7 +7,7 @@
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="CoreDataExample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="coreDataExam2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -16,62 +16,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="DGc-Yg-5gA">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="2CW-hs-Bce">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
+                                    <rect key="frame" x="0.0" y="-8" width="400" height="800"/>
                                 </variation>
                                 <connections>
-                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="uVz-Ou-exD"/>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="Xrv-wQ-hTv"/>
                                 </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="DGc-Yg-5gA"/>
+                                <exclude reference="2CW-hs-Bce"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="DGc-Yg-5gA"/>
+                                <include reference="2CW-hs-Bce"/>
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="Oq6-RC-V0X">
-                        <barButtonItem key="rightBarButtonItem" title="add" id="Jmv-kK-MOL">
+                    <navigationItem key="navigationItem" id="hc0-hp-aoj">
+                        <barButtonItem key="rightBarButtonItem" title="add" id="FdO-bf-Ocj">
                             <connections>
-                                <action selector="addItem:" destination="vXZ-lx-hvc" id="VTt-hh-pUH"/>
+                                <action selector="addItem:" destination="vXZ-lx-hvc" id="fxv-JH-qDp"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="tableView" destination="DGc-Yg-5gA" id="dad-xa-8og"/>
+                        <outlet property="tableView" destination="2CW-hs-Bce" id="U2x-sN-dby"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3162" y="395.25"/>
+            <point key="canvasLocation" x="952" y="136"/>
         </scene>
-        <!--Item-->
-        <scene sceneID="UwT-5p-jzX">
+        <!--Navigation Controller-->
+        <scene sceneID="pn1-c5-5pE">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dfo-8a-GDH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="sLs-zn-IA8"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jvl-D1-ZKT" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qM0-lY-Gm3">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kwR-Id-6Ja">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="ROu-k4-HYy"/>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="S1d-K3-GZB"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="X46-nu-PKl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fES-Zq-Ts3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2409" y="368.25"/>
+            <point key="canvasLocation" x="149" y="119"/>
         </scene>
     </scenes>
 </document>

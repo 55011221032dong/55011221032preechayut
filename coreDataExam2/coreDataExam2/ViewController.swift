@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  CoreDataExample
+//  coreDataExam2
 //
 //  Created by student on 10/31/14.
 //  Copyright (c) 2014 student. All rights reserved.
@@ -10,14 +10,9 @@ import UIKit
 import CoreData
 
 class ViewController: UIViewController , UITableViewDataSource {
-    
-    
     var items = [NSManagedObject]()
-    
     @IBOutlet weak var tableView: UITableView!
-    
     @IBAction func addItem(sender: AnyObject) {
-    
         var alert = UIAlertController(title: "New item", message: "Add a item", preferredStyle: .Alert)
         let saveAction = UIAlertAction(title: "Save", style: .Default){
             (action:UIAlertAction!) -> Void in
@@ -36,29 +31,17 @@ class ViewController: UIViewController , UITableViewDataSource {
         
     }
     
-    
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "\"Shopping List\""
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-        
-        
-        
         // Do any additional setup after loading the view, typically from a nib.
     }
-    
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
     func tableView(tableView: UITableView,numberOfRowsInSection section: Int) ->Int{
         return items.count
     }
@@ -71,15 +54,15 @@ class ViewController: UIViewController , UITableViewDataSource {
     }
     
     func saveName(name: String){
-    
-    let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
-    let managedContext = appDelegate.managedObjectContext!
-    
-    let entity = NSEntityDescription.entityForName("Item", inManagedObjectContext:managedContext)
         
-    let item = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
+        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        let managedContext = appDelegate.managedObjectContext!
         
-    item.setValue(name, forKey:"name")
+        let entity = NSEntityDescription.entityForName("Item", inManagedObjectContext:managedContext)
+        
+        let item = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
+        
+        item.setValue(name, forKey:"name")
         
         var error: NSError?
         if !managedContext.save(&error){
@@ -87,7 +70,7 @@ class ViewController: UIViewController , UITableViewDataSource {
         }
         items.append(item)
     }
-  
+    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -103,7 +86,7 @@ class ViewController: UIViewController , UITableViewDataSource {
         }
         
     }
-    
+
 
 }
 

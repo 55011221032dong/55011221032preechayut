@@ -13,6 +13,11 @@
 		3F59E7E41A15D88300DA005D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F59E7E31A15D88300DA005D /* Images.xcassets */; };
 		3F59E7E71A15D88300DA005D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F59E7E51A15D88300DA005D /* LaunchScreen.xib */; };
 		3F59E7F31A15D88300DA005D /* gameQTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F59E7F21A15D88300DA005D /* gameQTests.swift */; };
+		3F59E82B1A15F80700DA005D /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F59E82A1A15F80700DA005D /* apple.png */; };
+		3F59E82D1A15FA1400DA005D /* พื้น.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F59E82C1A15FA1400DA005D /* พื้น.png */; };
+		3F59E82F1A15FB0600DA005D /* ลำไย.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F59E82E1A15FB0600DA005D /* ลำไย.png */; };
+		3F59E8311A15FC9E00DA005D /* มะม่วง.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F59E8301A15FC9E00DA005D /* มะม่วง.png */; };
+		3F59E8331A15FCA700DA005D /* ทุเรียน.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F59E8321A15FCA700DA005D /* ทุเรียน.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,11 @@
 		3F59E7EC1A15D88300DA005D /* gameQTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gameQTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F59E7F11A15D88300DA005D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F59E7F21A15D88300DA005D /* gameQTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameQTests.swift; sourceTree = "<group>"; };
+		3F59E82A1A15F80700DA005D /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
+		3F59E82C1A15FA1400DA005D /* พื้น.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "พื้น.png"; sourceTree = "<group>"; };
+		3F59E82E1A15FB0600DA005D /* ลำไย.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ลำไย.png"; sourceTree = "<group>"; };
+		3F59E8301A15FC9E00DA005D /* มะม่วง.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "มะม่วง.png"; sourceTree = "<group>"; };
+		3F59E8321A15FCA700DA005D /* ทุเรียน.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ทุเรียน.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +69,11 @@
 		3F59E7CE1A15D88300DA005D = {
 			isa = PBXGroup;
 			children = (
+				3F59E8321A15FCA700DA005D /* ทุเรียน.png */,
+				3F59E8301A15FC9E00DA005D /* มะม่วง.png */,
+				3F59E82E1A15FB0600DA005D /* ลำไย.png */,
+				3F59E82C1A15FA1400DA005D /* พื้น.png */,
+				3F59E82A1A15F80700DA005D /* apple.png */,
 				3F59E7D91A15D88300DA005D /* gameQ */,
 				3F59E7EF1A15D88300DA005D /* gameQTests */,
 				3F59E7D81A15D88300DA005D /* Products */,
@@ -192,8 +207,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F59E8331A15FCA700DA005D /* ทุเรียน.png in Resources */,
 				3F59E7E21A15D88300DA005D /* Main.storyboard in Resources */,
 				3F59E7E71A15D88300DA005D /* LaunchScreen.xib in Resources */,
+				3F59E82D1A15FA1400DA005D /* พื้น.png in Resources */,
+				3F59E82F1A15FB0600DA005D /* ลำไย.png in Resources */,
+				3F59E82B1A15F80700DA005D /* apple.png in Resources */,
+				3F59E8311A15FC9E00DA005D /* มะม่วง.png in Resources */,
 				3F59E7E41A15D88300DA005D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

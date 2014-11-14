@@ -19,29 +19,37 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let back = UIImageView(frame: CGRectMake(0, 0, 380, 670))
+        back.image = UIImage(named: "พื้น.png");
+        view.addSubview(back)
+        
         square = UIView(frame: CGRect(x: 0, y: 650, width: 90, height: 30))
         square.backgroundColor = UIColor.grayColor()
         view.addSubview(square)
         
         
+        var image = UIImage();
         
         
         
-        let barrier = UIView(frame: CGRect(x: 0, y: 300, width: 30, height: 30))
-        barrier.backgroundColor = UIColor.redColor()
+        
+        let barrier = UIImageView(frame: CGRectMake(0, 300, 30, 30))
+        barrier.image = UIImage(named: "apple.png");
         view.addSubview(barrier)
         
         
-        let barrier2 = UIView(frame: CGRect(x: 30, y: 100, width: 30, height: 30))
-        barrier2.backgroundColor = UIColor.greenColor()
+        
+        
+        let barrier2 = UIImageView(frame: CGRectMake(0, 300, 30, 30))
+        barrier2.image = UIImage(named: "ลำไย.png");
         view.addSubview(barrier2)
         
-        let barrier3 = UIView(frame: CGRect(x: 60, y: 100, width: 30, height: 30))
-        barrier3.backgroundColor = UIColor.blueColor()
+        let barrier3 = UIImageView(frame: CGRectMake(0, 300, 30, 30))
+        barrier3.image = UIImage(named: "มะม่วง.png");
         view.addSubview(barrier3)
         
-        let barrier4 = UIView(frame: CGRect(x: 120, y: 100, width: 30, height: 30))
-        barrier4.backgroundColor = UIColor.blueColor()
+        let barrier4 = UIImageView(frame: CGRectMake(0, 300, 30, 30))
+        barrier4.image = UIImage(named: "ทุเรียน.png");
         view.addSubview(barrier4)
         
         

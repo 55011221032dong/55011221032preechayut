@@ -18,6 +18,8 @@
 		3F59E82F1A15FB0600DA005D /* ลำไย.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F59E82E1A15FB0600DA005D /* ลำไย.png */; };
 		3F59E8311A15FC9E00DA005D /* มะม่วง.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F59E8301A15FC9E00DA005D /* มะม่วง.png */; };
 		3F59E8331A15FCA700DA005D /* ทุเรียน.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F59E8321A15FCA700DA005D /* ทุเรียน.png */; };
+		3F59E8351A16002500DA005D /* ตะกร้า.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F59E8341A16002500DA005D /* ตะกร้า.png */; };
+		3F59E8371A16015200DA005D /* ตะกร้า2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F59E8361A16015200DA005D /* ตะกร้า2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		3F59E82E1A15FB0600DA005D /* ลำไย.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ลำไย.png"; sourceTree = "<group>"; };
 		3F59E8301A15FC9E00DA005D /* มะม่วง.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "มะม่วง.png"; sourceTree = "<group>"; };
 		3F59E8321A15FCA700DA005D /* ทุเรียน.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ทุเรียน.png"; sourceTree = "<group>"; };
+		3F59E8341A16002500DA005D /* ตะกร้า.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ตะกร้า.png"; sourceTree = "<group>"; };
+		3F59E8361A16015200DA005D /* ตะกร้า2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ตะกร้า2.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 		3F59E7CE1A15D88300DA005D = {
 			isa = PBXGroup;
 			children = (
+				3F59E8361A16015200DA005D /* ตะกร้า2.png */,
+				3F59E8341A16002500DA005D /* ตะกร้า.png */,
 				3F59E8321A15FCA700DA005D /* ทุเรียน.png */,
 				3F59E8301A15FC9E00DA005D /* มะม่วง.png */,
 				3F59E82E1A15FB0600DA005D /* ลำไย.png */,
@@ -210,8 +216,10 @@
 				3F59E8331A15FCA700DA005D /* ทุเรียน.png in Resources */,
 				3F59E7E21A15D88300DA005D /* Main.storyboard in Resources */,
 				3F59E7E71A15D88300DA005D /* LaunchScreen.xib in Resources */,
+				3F59E8351A16002500DA005D /* ตะกร้า.png in Resources */,
 				3F59E82D1A15FA1400DA005D /* พื้น.png in Resources */,
 				3F59E82F1A15FB0600DA005D /* ลำไย.png in Resources */,
+				3F59E8371A16015200DA005D /* ตะกร้า2.png in Resources */,
 				3F59E82B1A15F80700DA005D /* apple.png in Resources */,
 				3F59E8311A15FC9E00DA005D /* มะม่วง.png in Resources */,
 				3F59E7E41A15D88300DA005D /* Images.xcassets in Resources */,

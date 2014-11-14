@@ -23,6 +23,12 @@ class ViewController: UIViewController {
         back.image = UIImage(named: "พื้น.png");
         view.addSubview(back)
         
+        let back2 = UIImageView(frame: CGRectMake(200, 200, 70, 70))
+        back2.image = UIImage(named: "ตะกร้า.png");
+        view.addSubview(back2)
+        
+        
+        
         square = UIView(frame: CGRect(x: 0, y: 650, width: 90, height: 30))
         square.backgroundColor = UIColor.grayColor()
         view.addSubview(square)
@@ -39,7 +45,6 @@ class ViewController: UIViewController {
         
         
         
-        
         let barrier2 = UIImageView(frame: CGRectMake(0, 300, 30, 30))
         barrier2.image = UIImage(named: "ลำไย.png");
         view.addSubview(barrier2)
@@ -52,13 +57,19 @@ class ViewController: UIViewController {
         barrier4.image = UIImage(named: "ทุเรียน.png");
         view.addSubview(barrier4)
         
+        let back3 = UIImageView(frame: CGRectMake(200, 200, 70, 70))
+        
+        view.addSubview(back3)
         
         
         
         
-        collision = UICollisionBehavior(items: [square,barrier,barrier2,barrier3,barrier4])
+        
+        
+        collision = UICollisionBehavior(items: [back3,square,barrier,barrier2,barrier3,barrier4])
         collision.translatesReferenceBoundsIntoBoundary = true
         
+        collision.addBoundaryWithIdentifier("back3", forPath: UIBezierPath(rect: back3.frame))
         
         animator = UIDynamicAnimator(referenceView: view)
         gravity = UIGravityBehavior(items: [barrier,barrier2,barrier3,barrier4])
